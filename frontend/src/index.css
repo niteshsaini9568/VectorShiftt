@@ -1,0 +1,68 @@
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 bg-brand-900 text-slate-100 font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .mesh-grid-bg {
+    background:
+      radial-gradient(circle at 15% 20%, rgba(59, 130, 246, 0.12), transparent 45%),
+      radial-gradient(circle at 80% 70%, rgba(14, 165, 233, 0.09), transparent 42%),
+      radial-gradient(circle at 65% 15%, rgba(99, 102, 241, 0.08), transparent 35%),
+      linear-gradient(#111827 1px, transparent 1px),
+      linear-gradient(90deg, #111827 1px, transparent 1px),
+      #0f1115;
+    background-size: auto, auto, auto, 24px 24px, 24px 24px, auto;
+  }
+}
+
+.react-flow__edge-path {
+  stroke: #e2e8f0 !important;
+  stroke-width: 2px !important;
+}
+
+.react-flow__edge.selected .react-flow__edge-path,
+.react-flow__edge:hover .react-flow__edge-path {
+  stroke: #f8fafc !important;
+}
+
+.react-flow__handle {
+  width: 10px !important;
+  height: 10px !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-radius: 999px !important;
+}
+
+.react-flow__controls,
+.react-flow__minimap {
+  background: #111827 !important;
+  border: 1px solid #1f2937 !important;
+  border-radius: 10px !important;
+}
+
+.react-flow__controls-button {
+  background: #111827 !important;
+  border-bottom: 1px solid #1f2937 !important;
+  color: #94a3b8 !important;
+  fill: #94a3b8 !important;
+}
+
+.react-flow__controls-button:hover {
+  background: #1f2937 !important;
+  fill: #e2e8f0 !important;
+}
+
+.react-flow__attribution {
+  display: none !important;
+}
